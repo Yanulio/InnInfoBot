@@ -62,7 +62,7 @@ async Task ProcessCommandAsync(ITelegramBotClient botClient, long chatId, long u
     switch (command.Split(' ').First())
     {
         case "/start":
-            await botClient.SendTextMessageAsync(chatId, "Добрый день! Чтобы получить список доступных команд, введите команду /help");
+            await botClient.SendTextMessageAsync(chatId, "Добрый день! Используйте /help для получения списка команд.");
             break;
 
         case "/help":
